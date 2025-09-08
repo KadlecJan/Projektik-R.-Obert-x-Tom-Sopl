@@ -6,7 +6,6 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { Analytics } from "@vercel/analytics/react";
-import globalStyles from "./styles/global.css";
 
 export function Layout({ children }) {
   return (
@@ -16,7 +15,6 @@ export function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        <style>{globalStyles}</style>
       </head>
       <body>
         {children}
