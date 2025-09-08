@@ -1,3 +1,5 @@
+import Header from "../components/header";
+
 export const meta = () => {
   return [
     { title: "blog" },
@@ -6,5 +8,9 @@ export const meta = () => {
 };
 
 export default function Index() {
-  return <div></div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
