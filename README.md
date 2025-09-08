@@ -1,1 +1,1 @@
-# Projektik-R.-Obert-x-Tom-Sopl
+# Projektik-R.-Obert-x-Tom-Sopl-x Jan Tkanec
