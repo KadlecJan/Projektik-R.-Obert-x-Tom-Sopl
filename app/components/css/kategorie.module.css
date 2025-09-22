@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  font-size: 150px;
+  text-align: center;
+  padding-top: 30vh;
+  color: rgb(255, 255, 255);
+}
+.head {
+  background-size: cover;
+  height: 100vh;
+}
+
+.articles {
+  width: 80%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+}
+
+.imi {
+  width: 400px;
+  height: 300px;
+}
+
+.post {
+  background-color: red;
+}
