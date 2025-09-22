@@ -1,0 +1,28 @@
+.header {
+  width: 70%;
+  margin: auto;
+  background-color: #7f62ff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  button {
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #7f62ff;
+  }
+}

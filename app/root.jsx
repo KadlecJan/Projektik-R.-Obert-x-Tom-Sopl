@@ -7,9 +7,9 @@ import {
 } from "@remix-run/react";
 import { Analytics } from "@vercel/analytics/react";
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }) {
   return (
-    <html lang="en">
+    <html lang="cs">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
