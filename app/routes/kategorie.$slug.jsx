@@ -1,51 +1,52 @@
-import Header from "../components/header";
+// app/routes/kategorie.$slug.jsx
+
+import { useLoaderData } from "@remix-run/react";
+import { json } from "@remix-run/node";
+import { getCategoryBySlug, getPostsInCategory } from "../api/category.db";
 import style from "../components/css/kategorie.module.css";
+import Header from "../components/header";
 
-// export async function loader({ params }) {
-//   const categorySlug = params.slug;
-//   let categoryData = await getCategoryBySlug(categorySlug);
-//   return categoryData[0];
-// }
+// Loader pro načtení kategorie podle slugu
+export async function loader({ params }) {
+  const categorySlug = params.slug;
+  let categoryData = await getCategoryBySlug(categorySlug);
+  let postsData = await getPostsInCategory(categorySlug);
+  // console.log("posts:", postsData);
+  // console.log("category:", categoryData);
 
-const category = {
-  title: "UFO & UAP",
-  posts: [
-    {
-      id: 1,
-      img: "https://static.scientificamerican.com/dam/m/2a63d59b62cb6c52/original/Xenolinguistics_alien_lauguage.jpeg?m=1743695744.971&w=1200",
-      title: "They are here",
-      excerpt: "This is the first post.",
-    },
-    {
-      id: 2,
-      img: "https://upload.wikimedia.org/wikipedia/commons/0/04/Roswell_Daily_Record._July_8%2C_1947._RAAF_Captures_Flying_Saucer_On_Ranch_in_Roswell_Region._Top_of_front_page.jpg",
-      title: "Second Post",
-      excerpt: "This is the second post.",
-    },
-    {
-      id: 3,
-      img: "https://upload.wikimedia.org/wikipedia/commons/0/04/Roswell_Daily_Record._July_8%2C_1947._RAAF_Captures_Flying_Saucer_On_Ranch_in_Roswell_Region._Top_of_front_page.jpg",
-      title: "Second Post",
-      excerpt: "This is the second post.",
-    },
-  ],
-};
+  if (!categoryData || categoryData.length === 0) {
+    throw new Response("Kategorie nenalezena", { status: 404 });
+  }
 
-export default function Index() {
+  return {
+    category: categoryData,
+    posts: postsData,
+  };
+}
+
+// Komponenta pro vykreslení kategorie
+export default function CategoryPage() {
+  const { category, posts } = useLoaderData();
+  console.log("category:", category);
+  console.log("posts:", posts);
+
   return (
     <main>
       <section className={style.head}>
         <Header />
-        <h1 className={style.title}>{category.title}</h1>
+        <h1 className={style.title}>{category[0].title}</h1>
       </section>
       <section className={style.articles}>
-        {category.posts.map((post) => (
+        {posts.map((post) => (
           <div className={style.post}>
-            {post.img && (
-              <img src={post.img} alt={post.title} className={style.imi} />
-            )}
-            <h2>{post.title}</h2>
-            <p>{post.excerpt}</p>
+            <img src={post.img} alt={post.title} className={style.imi} />
+            <h2 className={style.articletitle}>{post.title}</h2>
+            <p className={style.articledescr}>{post.text}</p>
+            <button className={style.kmButton}>
+              <a href="" className={style.kmButton}>
+                Know more...
+              </a>
+            </button>
           </div>
         ))}
       </section>
