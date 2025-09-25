@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(92, 0, 162);
+}
+.title {
+  font-size: 150px;
+  text-align: center;
+  padding-top: 30vh;
+  color: rgb(255, 255, 255);
+}
+.head {
+  background-image: url("/uvod.png");
+  background-size: cover;
+  height: 100vh;
+}
+.theblog {
+  font-size: 50px;
+}
+.h2 {
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+}
