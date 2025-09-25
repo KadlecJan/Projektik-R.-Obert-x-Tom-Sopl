@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(92, 0, 162);
+}
+.title {
+  font-size: 150px;
+  text-align: center;
+  padding-top: 30vh;
+  color: rgb(255, 255, 255);
+}
+.head {
+  background-image: url("/Rectangle 5.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.articles {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  gap: 10px;
+}
+
+.imi {
+  width: 100%;
+  height: 300px;
+}
+
+.post {
+  width: 400px;
+  background-color: rgb(143, 118, 255);
+  margin: auto;
+}
+
+.articletitle {
+  color: white;
+  font-size: 40px;
+  padding: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.articledescr {
+  color: white;
+  font-size: 30px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+.kmButton {
+  text-decoration: none;
+  background-color: rgb(92, 0, 162);
+  color: rgb(143, 118, 255);
+  font-weight: bold;
+  font-size: 25px;
+  border: none;
+  padding: 10px;
+  margin: 20px;
+}
