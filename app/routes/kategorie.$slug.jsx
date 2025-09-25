@@ -1,7 +1,6 @@
 // app/routes/kategorie.$slug.jsx
 
 import { useLoaderData } from "@remix-run/react";
-import { json } from "@remix-run/node";
 import { getCategoryBySlug, getPostsInCategory } from "../api/category.db";
 import style from "../components/css/kategorie.module.css";
 import Header from "../components/header";
