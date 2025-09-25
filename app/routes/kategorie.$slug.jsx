@@ -5,6 +5,7 @@ import { json } from "@remix-run/node";
 import { getCategoryBySlug, getPostsInCategory } from "../api/category.db";
 import style from "../components/css/kategorie.module.css";
 import Header from "../components/header";
+import style from "../components/css/kategorie.module.css";
 
 // Loader pro načtení kategorie podle slugu
 export async function loader({ params }) {
