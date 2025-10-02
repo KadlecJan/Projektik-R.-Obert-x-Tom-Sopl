@@ -8,16 +8,16 @@ export default function Header() {
           <Link to="/">HOME</Link>
         </li>
         <li>
-          <Link to="/">UAP/UFO</Link>
+          <Link to="/kategorie/ufo">UAP/UFO</Link>
         </li>
         <li>
-          <Link to="/">ALCOHOL</Link>
+          <Link to="/kategorie/alcohol">ALCOHOL</Link>
         </li>
         <li>
-          <Link to="/">ILLUMINATI</Link>
+          <Link to="/kategorie/iluminati">ILLUMINATI</Link>
         </li>
         <li>
-          <Link to="/">POLITICS</Link>
+          <Link to="/kategorie/politics">POLITICS</Link>
         </li>
       </ul>
       <button>LOG IN</button>

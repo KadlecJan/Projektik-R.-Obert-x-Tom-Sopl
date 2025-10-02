@@ -1,0 +1,16 @@
+.footer {
+  text-align: center;
+  color: white;
+  margin: auto;
+  width: 100%;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+.loga {
+  width: 50px;
+}
