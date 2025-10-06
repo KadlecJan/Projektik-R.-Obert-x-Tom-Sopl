@@ -1,0 +1,10 @@
+.form {
+  background-image: url(/public/Mistr.png);
+  background-size: cover;
+  height: 100svh;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}

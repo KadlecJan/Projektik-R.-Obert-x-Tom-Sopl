@@ -1,8 +1,9 @@
 import { Form } from "@remix-run/react";
+import style from "../components/css/addpost.module.css";
 
 export default function AddPostForm() {
   return (
-    <Form method="POST" action="/addPost">
+    <Form method="POST" action="/addPost" className={style.form}>
       <h2>Title</h2>
       <input type="text" name="title" id="title" placeholder="title" />
       <h2>Autor</h2>
