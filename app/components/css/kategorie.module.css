@@ -11,8 +11,24 @@ body {
   padding-top: 30vh;
   color: rgb(255, 255, 255);
 }
-.head {
+.bg_ufo {
   background-image: url("/Rectangle 5.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg_alcohol {
+  background-image: url("https://www.mcgill.ca/oss/files/oss/styles/hd/public/alcohol.png?itok=VkPLqYOp&timestamp=1559847546");
+  background-size: cover;
+  height: 100vh;
+}
+.bg_illuminati {
+  background-image: url("https://images.uncyclomedia.co/necyklopedie/cs/c/c3/Iluminat_cesky.png");
+  background-size: cover;
+  height: 100vh;
+}
+.bg_politics {
+  background-image: url("https://static01.nyt.com/images/2019/10/08/business/00epgates1/00epgates1-articleLarge-v3.jpg?quality=75&auto=webp&disable=upscale");
   background-size: cover;
   height: 100vh;
 }

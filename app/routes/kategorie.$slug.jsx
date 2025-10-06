@@ -38,7 +38,7 @@ export default function CategoryPage() {
 
   return (
     <main>
-      <section className={style.head}>
+      <section className={style[`bg_${category[0].slug}`]}>
         <Header />
         <h1 className={style.title}>{category[0].title}</h1>
       </section>
