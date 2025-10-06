@@ -49,6 +49,10 @@ body {
 
 .post {
   width: 400px;
+  height: 80svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: rgb(143, 118, 255);
   margin: auto;
 }

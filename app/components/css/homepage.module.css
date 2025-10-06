@@ -25,3 +25,56 @@ body {
   text-align: center;
   color: white;
 }
+
+.legacy {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.lidi {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  gap: 80px;
+}
+.jmeno {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+.legacyArticle {
+  margin-top: 50px;
+}
+
+.legacyText {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+h4 {
+  font-size: 70px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  background-color: rgb(255, 0, 0);
+
+  padding: 30px;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+h4:visited {
+  background-color: yellow;
+}
+.tekImg {
+  width: 150px;
+  margin-left: 50px;
+}
+.emptyDiv {
+  margin-bottom: 150px;
+}
