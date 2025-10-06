@@ -23,6 +23,13 @@ export async function loader({ params }) {
   };
 }
 
+// Funkce pro zkrácení textu na 100 znaků
+function sliceText(text) {
+  if (text.length > 150) {
+    return text.slice(0, 150) + "...";
+  }
+  return text;
+}
 // Komponenta pro vykreslení kategorie
 export default function CategoryPage() {
   const { category, posts } = useLoaderData();
@@ -40,7 +47,7 @@ export default function CategoryPage() {
           <div className={style.post}>
             <img src={post.img} alt={post.title} className={style.imi} />
             <h2 className={style.articletitle}>{post.title}</h2>
-            <p className={style.articledescr}>{post.text}</p>
+            <p className={style.articledescr}>{sliceText(post.text)}</p>
             <button className={style.kmButton}>
               <a href="" className={style.kmButton}>
                 Know more...
