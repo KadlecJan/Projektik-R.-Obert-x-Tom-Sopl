@@ -61,3 +61,15 @@ body {
   padding: 10px;
   margin: 20px;
 }
+.autor {
+  color: white;
+  font-size: 25px;
+  padding-left: 25px;
+  padding-bottom: 5px;
+}
+.articledate {
+  color: white;
+  font-size: 20px;
+  padding-left: 25px;
+  padding-bottom: 5px;
+}

@@ -46,7 +46,9 @@ export default function CategoryPage() {
         {posts.map((post) => (
           <div className={style.post}>
             <img src={post.img} alt={post.title} className={style.imi} />
+            <h5 className={style.articledate}>{post.date}</h5>
             <h2 className={style.articletitle}>{post.title}</h2>
+            <h4 className={style.autor}>{post.autor}</h4>
             <p className={style.articledescr}>{sliceText(post.text)}</p>
             <button className={style.kmButton}>
               <a href="" className={style.kmButton}>
