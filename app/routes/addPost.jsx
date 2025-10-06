@@ -10,7 +10,7 @@ export async function action({ request }) {
   const text = addPostFormData.get("text");
   const category = addPostFormData.get("category");
   const img = addPostFormData.get("img");
-  const slug = title.toLowerCase().replace(/ /g, "-");
+  const slug = category;
   await addPost(slug, date, autor, title, text, category, img);
 
   return redirect("/");
