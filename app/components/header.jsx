@@ -14,13 +14,13 @@ export default function Header() {
           <Link to="/kategorie/alcohol">ALCOHOL</Link>
         </li>
         <li>
-          <Link to="/kategorie/iluminati">ILLUMINATI</Link>
+          <Link to="/kategorie/illuminati">ILLUMINATI</Link>
         </li>
         <li>
           <Link to="/kategorie/politics">POLITICS</Link>
         </li>
       </ul>
-      <button>LOG IN</button>
+      <Link to="/addPostForm">add new post</Link>
     </header>
   );
 }
